@@ -8,6 +8,8 @@ import { Constants } from 'expo'
 import { purple, white } from './utils/colors'
 import EntryDetail from './components/EntryDetail'
 import { createAppContainer, createStackNavigator } from 'react-navigation'
+import { setLocalNotification } from './utils/helpers'
+
 
 
 
@@ -39,6 +41,9 @@ const MainNavigator = createAppContainer(createStackNavigator({
 
 
 export default class App extends React.Component {
+  componentDidMount() {
+    setLocalNotification()
+  }
   render() {
     return (
       <Provider store={createStore(reducer)}>

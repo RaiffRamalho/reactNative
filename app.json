@@ -2,6 +2,10 @@
   "expo": {
     "name": "UdaciFitness",
     "slug": "UdaciFitness",
+    "description": "The best triathlon tracker ever",
+    "notification": {
+      "icon": "https://tylermcginnis.com/udacifitness-45.png"
+    },
     "privacy": "public",
     "sdkVersion": "32.0.0",
     "platforms": [
@@ -23,7 +27,11 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "org.udacifitness.exp"
+    },
+    "android": {
+      "package": "org.udacifitness.exp"
     }
   }
 }
